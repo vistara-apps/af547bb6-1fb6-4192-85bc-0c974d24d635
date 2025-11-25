@@ -1,24 +1,25 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { ThemeProvider } from './components/ThemeProvider'
+import type { Metadata } from "next";
+import { Providers } from "./components/Providers";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Base Mini App',
-  description: 'Built with Zara',
-}
+  title: "AlphaFlow AI - AI-driven Onchain Wealth Management",
+  description: "AI-driven investment strategies on Base & Farcaster",
+  icons: {
+    icon: "/icon.png",
+  },
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>
-        <ThemeProvider defaultTheme="base">
-          {children}
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }
