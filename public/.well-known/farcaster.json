@@ -10,7 +10,7 @@
     "iconUrl": "https://alphaflow-ai.com/icon.png",
     "splashImageUrl": "https://alphaflow-ai.com/splash.png",
     "splashBackgroundColor": "#0a1929",
-    "homeUrl": "https://alphaflow-ai.com",
-    "webhookUrl": "https://alphaflow-ai.com/api/webhook"
+    "homeUrl": "https://app-4d24d635-xbrb.vercel.app",
+    "webhookUrl": "https://app-4d24d635-xbrb.vercel.app/api/webhook"
   }
 }
